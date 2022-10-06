@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+}
+
+header .top-section {
+    background-color: #2874F0;
+    display: flex;
+    padding: 15px 14px 10px 12px;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+}
+
+.backarrow-logo-name,
+.search-cart-login {
+    display: flex;
+    align-items: center;
+}
+
+.flipkart-logo {
+    height: 23px;
+    aspect-ratio: 1;
+    margin-left: 11px;
+    margin-bottom: 2px;
+}
+
+.flipkart-logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.backarrow-logo-name p {
+    margin-left: 12px;
+    margin-bottom: 1px;
+    font-weight: 500;
+}
+
+.search-cart-login p {
+    margin-bottom: 3px;
+    /* margin-left: 26px; */
+}
+
+.cart-icon {
+    margin-right: 26px;
+    margin-left: 23px;
+}
