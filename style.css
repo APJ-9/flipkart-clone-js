@@ -11,6 +11,7 @@ body {
 
 header {
     width: 100%;
+    position: relative;
 }
 
 header .top-section {
@@ -49,10 +50,86 @@ header .top-section {
 
 .search-cart-login p {
     margin-bottom: 3px;
-    /* margin-left: 26px; */
 }
 
 .cart-icon {
     margin-right: 26px;
     margin-left: 23px;
+}
+
+header .bottom-section {
+    display: block;
+    width: 100%;
+
+}
+
+.sort-filter {
+    display: flex;
+}
+
+header .bottom-section.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header .sort,
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 48px;
+}
+
+.filter {
+    border-left: 1px solid #eee;
+}
+
+.bottom-section .icon {
+    height: 24px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+}
+
+.bottom-section .icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.header-shadow {
+    width: 100%;
+    z-index: -2;
+    height: 4px;
+    margin: 0;
+    display: flex;
+
+}
+
+.header-shadow img {
+    width: 100%;
+    height: 100%;
+}
+
+.adv {
+    width: 100%;
+}
+
+.adv img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.to-delete {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
 }
