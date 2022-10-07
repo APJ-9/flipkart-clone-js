@@ -7,12 +7,48 @@
             "customer-count": "484",
             "flipkart-assured": "true",
             "orginal-price": "8793",
-            "selling-price": "7495",
+            "discount-price": "7495",
             "discount": "14",
             "delivery": "free",
             "offer": "Bank Offer",
             "specification": [
-                "3GB RAM | 32 GB Storage",
+                "3 GB RAM | 32 GB Storage",
+                "16.9 cm (6.53 inch) Display",
+                "5000 mAh",
+                "13MP Rear Camera"
+            ]
+        },
+        {
+            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+            "name": "REDMI 10A (Slate Grey, 64 GB)",
+            "rating": "4.1",
+            "customer-count": "2779",
+            "flipkart-assured": "true",
+            "orginal-price": "8567",
+            "discount-price": "8567",
+            "discount": "0",
+            "delivery": "free",
+            "offer": "Bank Offer",
+            "specification": [
+                "4 GB RAM | 64 GB Storage",
+                "16.9 cm (6.53 inch) Display",
+                "5000 mAh",
+                "13MP Rear Camera"
+            ]
+        },
+        {
+            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+            "name": "REDMI 10A (Slate Grey, 64 GB)",
+            "rating": "4.1",
+            "customer-count": "2779",
+            "flipkart-assured": "true",
+            "orginal-price": "8567",
+            "discount-price": "8567",
+            "discount": "0",
+            "delivery": "free",
+            "offer": "Bank Offer",
+            "specification": [
+                "4 GB RAM | 64 GB Storage",
                 "16.9 cm (6.53 inch) Display",
                 "5000 mAh",
                 "13MP Rear Camera"
