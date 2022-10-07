@@ -4,29 +4,28 @@ const mobiles = allMobiles.mobile
 const headerBottom = document.getElementById('bottom-section')
 const mainSection = document.getElementById('main')
 
-// window.addEventListener('scroll', fixHeader)
-// window.addEventListener('load', addCards)
-addCards()
-window.onscroll = function () { fixHeader() }
+window.addEventListener('load', addCards)
+window.addEventListener('scroll', fixHeader)
+
+// window.onscroll = function () { fixHeader() }
+
 function fixHeader() {
-    // console.log(window.scrollY + ' hello ' + headerBottom.offsetTop)
     if (document.documentElement.scrollTop >= 52) {
-        headerBottom.style.position = 'fixed'
         headerBottom.classList.add('active')
+        mainSection.style.marginTop = '48px'
+
     } else {
-        headerBottom.style.position = 'static'
         headerBottom.classList.remove('active')
+        mainSection.style.marginTop = '0px'
     }
 }
-// console.log(typeof (mobiles))
+
 function addCards() {
     let i = 0
     for (i = 0; i < mobiles.length && i < 10; i++) {
         const card = createCard(i)
         mainSection.appendChild(card)
-
     }
-    console.log(i)
 }
 
 function createCard(i) {
@@ -49,15 +48,15 @@ function createCard(i) {
                 </div>
                 <div class="rating-plus">
                     <span class="rating">${mobiles[i].rating} ★</span>
-                    <span class="num-customer">(${mobiles[i]['customer-count']})</span>
+                    <span class="num-customer">(${parseInt(mobiles[i]['customer-count'], 10).toLocaleString('en-IN')})</span>
                     <div class="plus">
                         <img src="https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90"
                             alt="plus-logo-assured">
                     </div>
                 </div>
                 <div class="amount-details">
-                    <span class="price">${mobiles[i]['orginal-price']}</span>
-                    <span class="amount">₹${mobiles[i]['discount-price']}</span>
+                    <span class="price">${parseInt(mobiles[i]['orginal-price'], 10).toLocaleString('en-IN')}</span>
+                    <span class="amount">₹${parseInt(mobiles[i]['discount-price'], 10).toLocaleString('en-IN')}</span>
                     <span class="discount">${mobiles[i].discount}% off</span>
                 </div>
                 <div class="delivery">
@@ -77,3 +76,4 @@ function createCard(i) {
     `
     return card
 }
+
