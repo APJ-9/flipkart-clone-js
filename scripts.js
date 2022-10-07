@@ -3,10 +3,19 @@ import allMobiles from './mobile.json' assert {type: 'json'}
 const mobiles = allMobiles.mobile
 const headerBottom = document.getElementById('bottom-section')
 const mainSection = document.getElementById('main')
+const sortBtn = document.getElementById('sort')
+const sortMenu = document.getElementById('sort-menu')
+
+// console.log(sortBtn)
 
 window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
-
+sortBtn.addEventListener('click', () => {
+    sortMenu.style.display = 'flex'
+})
+sortMenu.addEventListener('click', () => {
+    sortMenu.style.display = 'none'
+})
 // window.onscroll = function () { fixHeader() }
 
 function fixHeader() {
@@ -29,7 +38,7 @@ function addCards() {
 }
 
 function createCard(i) {
-    console.log(mobiles[i])
+    // console.log(mobiles[i])
     const card = document.createElement('div')
     card.classList.add('card')
     card.innerHTML = `

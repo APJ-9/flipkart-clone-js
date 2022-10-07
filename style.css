@@ -26,6 +26,7 @@ header .top-section {
     color: #fff;
     font-size: 16px;
     font-family: sans-serif;
+    height: 52px;
 }
 
 .backarrow-logo-name,
@@ -343,4 +344,54 @@ header .sort,
     font-size: 14px;
     justify-content: space-between;
     padding: 10px 12px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    display: flex;
+    width: 100%;
+}
+
+.backarrow-logo-name p.p-filter {
+    margin-left: 23px;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+}
+
+.filter-sub {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    align-items: flex-start;
+    background-color: #f1f3f6;
+    width: 106px;
+}
+
+.filter-sub p {
+    padding: 13px 0px 14px 16px;
+    font-size: 14px;
+    /* margin: 0 0 12px 0; */
+    width: 100%;
+}
+
+.filter-sub p.active {
+    background-color: white;
+    color: #2874F0;
+}
+
+.checkbox {
+    display: flex;
+    padding: 12px 19px 12px 20px;
+    font-size: 13.9px;
+    margin-bottom: 6px;
+}
+
+.checkbox img {
+    width: 18px;
+    aspect-ratio: 1;
+    margin-right: 19px;
 }
