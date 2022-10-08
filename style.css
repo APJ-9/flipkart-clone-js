@@ -161,11 +161,13 @@ header .sort,
     margin-left: 5px;
     margin-bottom: 11px;
     height: 114px;
+    display: flex;
 }
 
 .mob-details .mob img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    margin: 0 auto;
 }
 
 .mob-details .details {

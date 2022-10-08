@@ -1,13 +1,13 @@
 {
     "mobile": [
         {
-            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+            "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
             "name": "REDMI 10A (Slate Grey, 32 GB)",
             "rating": "4.1",
-            "customer-count": "484",
-            "flipkart-assured": "true",
-            "orginal-price": "8793",
-            "discount-price": "7495",
+            "customerCount": "484",
+            "flipkartAssured": "true",
+            "orginalPrice": "8793",
+            "discountPrice": "7495",
             "discount": "14",
             "delivery": "free",
             "offer": "Bank Offer",
@@ -19,13 +19,13 @@
             ]
         },
         {
-            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+            "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
             "name": "REDMI 10A (Slate Grey, 64 GB)",
             "rating": "4.1",
-            "customer-count": "2779",
-            "flipkart-assured": "true",
-            "orginal-price": "8567",
-            "discount-price": "8567",
+            "customerCount": "2779",
+            "flipkartAssured": "true",
+            "orginalPrice": "8567",
+            "discountPrice": "8567",
             "discount": "0",
             "delivery": "free",
             "offer": "Bank Offer",
@@ -37,39 +37,60 @@
             ]
         },
         {
-            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
-            "name": "REDMI 10A (Slate Grey, 64 GB)",
-            "rating": "4.1",
-            "customer-count": "2779",
-            "flipkart-assured": "true",
-            "orginal-price": "8567",
-            "discount-price": "8567",
-            "discount": "0",
+            "imageURL": "https://rukminim1.flixcart.com/image/200/250/ku5ufm80/mobile/8/b/1/sport-9a-redmi-original-imag7chjvhxdhhyh.jpeg?q=90&crop=false",
+            "name": "Redmi 9A Sport (Carbon Black, 32 GB)",
+            "rating": "4.2",
+            "customerCount": "19470",
+            "flipkartAssured": "true",
+            "orginalPrice": "6999",
+            "discountPrice": "6669",
+            "discount": "4",
             "delivery": "free",
             "offer": "Bank Offer",
             "specification": [
-                "4 GB RAM | 64 GB Storage",
-                "16.9 cm (6.53 inch) Display",
+                "2 GB RAM | 32 GB Storage",
+                "16.59 cm (6.53 inch) HD+Display",
                 "5000 mAh",
-                "13MP Rear Camera"
+                "13MP Rear Camera",
+                "5MP Front Camera"
             ]
         },
         {
-            "image": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
-            "name": "REDMI 10A (Slate Grey, 64 GB)",
-            "rating": "4.1",
-            "customer-count": "2779",
-            "flipkart-assured": "true",
-            "orginal-price": "8567",
-            "discount-price": "8567",
-            "discount": "0",
+            "imageURL": "https://rukminim1.flixcart.com/image/200/250/kehfi4w0/mobile/g/9/h/mi-redmi-9-lpddr4x-original-imafv5kypkgfqupf.jpeg?q=90&crop=false",
+            "name": "Redmi 9 (Sky Blue,64 GB)",
+            "rating": "4.2",
+            "customerCount": "26284",
+            "flipkartAssured": "true",
+            "orginalPrice": "9998",
+            "discountPrice": "9288",
+            "discount": "7",
             "delivery": "free",
             "offer": "Bank Offer",
             "specification": [
                 "4 GB RAM | 64 GB Storage",
-                "16.9 cm (6.53 inch) Display",
+                "16.59 cm (6.53 inch) HD+Display",
                 "5000 mAh",
-                "13MP Rear Camera"
+                "13MP + 2MP",
+                "5MP Front Camera"
+            ]
+        },
+        {
+            "imageURL": "https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/y/0/v/-original-imagagf6reaugwfw.jpeg?q=90&crop=false",
+            "name": "Xiaomi 11i Hypercharge 5G (Pacific Perl, 128 GB)",
+            "rating": "4.2",
+            "customerCount": "7049",
+            "flipkartAssured": "true",
+            "orginalPrice": "31999",
+            "discountPrice": "24999",
+            "discount": "21",
+            "delivery": "free",
+            "offer": "Top Discount of the Sale",
+            "specification": [
+                "6 GB RAM | 128 GB Storage",
+                "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
+                "4500 mAh",
+                "108MP + 8MP +2MP",
+                "16MP Front Camera"
             ]
         }
     ]

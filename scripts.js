@@ -6,6 +6,12 @@ const mainSection = document.getElementById('main')
 const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
 
+
+Object.entries(mobiles).forEach(([key, value]) => {
+    const keys = Object.keys(value)
+    console.log(keys)
+});
+
 window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
 sortBtn.addEventListener('click', () => {
@@ -36,6 +42,28 @@ function addCards() {
 }
 
 function createCard(i) {
+    let amountDetails
+    let mobSpec
+    if (mobiles[i].discount == 0) {
+        amountDetails = `
+        <div class="amount-details">
+            <span class="amount">₹${parseInt(mobiles[i].orginalPrice, 10).toLocaleString('en-IN')}</span>
+        </div>
+        `
+    } else {
+        amountDetails = `
+        <div class="amount-details">
+            <span class="price">${parseInt(mobiles[i].orginalPrice, 10).toLocaleString('en-IN')}</span>
+            <span class="amount">₹${parseInt(mobiles[i].discountPrice, 10).toLocaleString('en-IN')}</span>
+            <span class="discount">${mobiles[i].discount}% off</span>
+        </div>
+        `
+    } if (mobiles[i].specification.length > 0) {
+        mobSpec = ''
+        for (let j = 0; j < mobiles[i].specification.length; j++) {
+            mobSpec += (`<span>${mobiles[i].specification[j]}</span>`)
+        }
+    }
     const card = document.createElement('div')
     card.classList.add('card')
     card.innerHTML = `
@@ -45,7 +73,7 @@ function createCard(i) {
                     alt="heart-grey">
             </div>
             <div class="mob">
-                <img src="${mobiles[i].image}"
+                <img src="${mobiles[i].imageURL}"
                     alt="Redmi 10A" loading="lazy">
             </div>
             <div class="details">
@@ -54,30 +82,23 @@ function createCard(i) {
                 </div>
                 <div class="rating-plus">
                     <span class="rating">${mobiles[i].rating} ★</span>
-                    <span class="num-customer">(${parseInt(mobiles[i]['customer-count'], 10).toLocaleString('en-IN')})</span>
+                    <span class="num-customer">(${parseInt(mobiles[i].customerCount, 10).toLocaleString('en-IN')})</span>
                     <div class="plus">
                         <img src="https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90"
                             alt="plus-logo-assured">
                     </div>
                 </div>
-                <div class="amount-details">
-                    <span class="price">${parseInt(mobiles[i]['orginal-price'], 10).toLocaleString('en-IN')}</span>
-                    <span class="amount">₹${parseInt(mobiles[i]['discount-price'], 10).toLocaleString('en-IN')}</span>
-                    <span class="discount">${mobiles[i].discount}% off</span>
-                </div>
+                ${amountDetails}
                 <div class="delivery">
                     <span>Free delivery</span>
                 </div>
                 <div class="offer-details">
-                    <sapn class="offer">Bank Offer</sapn>
+                    <sapn class="offer">${mobiles[i].offer}</sapn>
                 </div>
             </div>
         </div>
         <div class="more-details">
-            <span>${mobiles[i].specification[0]}</span>
-            <span>${mobiles[i].specification[1]}</span>
-            <span>${mobiles[i].specification[2]}</span>
-            <span>${mobiles[i].specification[3]}</span>
+            ${mobSpec}
         </div>    
     `
     return card
