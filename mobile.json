@@ -11,6 +11,7 @@
             "discount": "14",
             "delivery": "free",
             "offer": "Bank Offer",
+            "date": "20001130",
             "specification": [
                 "3 GB RAM | 32 GB Storage",
                 "16.9 cm (6.53 inch) Display",
@@ -29,6 +30,7 @@
             "discount": "0",
             "delivery": "free",
             "offer": "Bank Offer",
+            "date": "19990121",
             "specification": [
                 "4 GB RAM | 64 GB Storage",
                 "16.9 cm (6.53 inch) Display",
@@ -47,6 +49,7 @@
             "discount": "4",
             "delivery": "free",
             "offer": "Bank Offer",
+            "date": "19981112",
             "specification": [
                 "2 GB RAM | 32 GB Storage",
                 "16.59 cm (6.53 inch) HD+Display",
@@ -66,6 +69,7 @@
             "discount": "7",
             "delivery": "free",
             "offer": "Bank Offer",
+            "date": "20221121",
             "specification": [
                 "4 GB RAM | 64 GB Storage",
                 "16.59 cm (6.53 inch) HD+Display",
@@ -85,6 +89,7 @@
             "discount": "21",
             "delivery": "free",
             "offer": "Top Discount of the Sale",
+            "date": "20051229",
             "specification": [
                 "6 GB RAM | 128 GB Storage",
                 "16.94 cm (6.67 inch) Full HD+ AMOLED Display",

@@ -7,20 +7,40 @@ const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
 
 
-Object.entries(mobiles).forEach(([key, value]) => {
-    const keys = Object.keys(value)
-    console.log(keys)
-});
+let sortMobiles = ''
+
+// Object.entries(mobiles).forEach(([key, value]) => {
+//     const keys = Object.keys(value)
+//     console.log(keys)
+// });
+
+// console.log(mobiles.sort((a, b) => b.orginalPrice - a.orginalPrice))
+console.log(mobiles.sort((a, b) => b.rating - a.rating))
+// console.log(mobiles.sort((a, b) => a.date - b.date))
+
+const jsonDate = (new Date()).toJSON();
+console.log(jsonDate)
 
 window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
+
 sortBtn.addEventListener('click', () => {
-    sortMenu.style.display = 'flex'
-    sortMenu.style.top = `${document.documentElement.scrollTop}px`
+    if (!sortBtn.classList.contains('active')) {
+
+        sortMenu.style.display = 'flex'
+        sortMenu.style.top = `${document.documentElement.scrollTop}px`
+        sortBtn.classList.add('active')
+
+        sortMenu.addEventListener('click', () => {
+            sortMenu.style.display = 'none'
+            sortBtn.classList.remove('active')
+        })
+        sortMobiles = document.querySelector("input[name=sort-by]:checked").value
+
+    }
 })
-sortMenu.addEventListener('click', () => {
-    sortMenu.style.display = 'none'
-})
+
+
 // window.onscroll = function () { fixHeader() }
 function fixHeader() {
     if (document.documentElement.scrollTop >= 52) {
