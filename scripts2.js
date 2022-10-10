@@ -1,7 +1,11 @@
 const checkbox = document.querySelectorAll('.checkbox')
-let rangeLowest, lowest = 1000, highest = 0, rangeHighest, count = 0
-checkbox.forEach(element => {
+let rangeLowest
+let rangeHighest
+let lowest = 1000
+let highest = 0
+let count = 0
 
+checkbox.forEach(element => {
     element.addEventListener('click', () => {
         if (element.getAttribute('data-checked') === 'false') {
             element.firstElementChild.setAttribute('src', 'https://static-assets-web.flixcart.com/www/linchpin/batman-returns/cross-platform-images/images/checked-b672f083.png?q=90')
@@ -25,7 +29,6 @@ checkbox.forEach(element => {
                     break
                 }
             }
-
             for (let i = 0; i < checkbox.length; i++) {
                 if (checkbox[i].getAttribute('data-checked') === 'true') {
                     highest = parseInt(checkbox[i].getAttribute('data-high'))
@@ -33,12 +36,12 @@ checkbox.forEach(element => {
             }
         }
         if (count === 0) {
-            lowest = 0
-            highest = 9
+            lowest = 1000
+            highest = 0
         }
-        //Enter the code for filter display
         localStorage.setItem('lowest', lowest)
         localStorage.setItem('highest', highest)
+        localStorage.setItem('count', count)
     })
 });
 

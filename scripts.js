@@ -1,22 +1,21 @@
 import allMobiles from './mobile.json' assert {type: 'json'}
 
-
 let mobiles = allMobiles.mobile
 const headerBottom = document.getElementById('bottom-section')
 const mainSection = document.getElementById('main')
 const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
 const sortList = document.querySelectorAll('input[name="sort-by"]')
+const count = parseInt(localStorage.getItem('count'))
+let highest = 99999999
+let lowest = 0
 
-const lowest = parseInt(localStorage.getItem('lowest')) * 1000
-const highest = parseInt(localStorage.getItem('highest')) * 1000
-
-// console.log(lowest, highest)
-// console.log(mobiles.length);
-// let lowest = -7
+if (count != 0) {
+    highest = parseInt(localStorage.getItem('highest')) * 1000
+    lowest = parseInt(localStorage.getItem('lowest')) * 1000
+}
 
 mobiles.sort((a, b) => b.rating - a.rating)
-
 
 for (let i = 0; i < mobiles.length; i++) {
     let lastPrice = parseInt(mobiles[i].orginalPrice);
@@ -28,32 +27,24 @@ for (let i = 0; i < mobiles.length; i++) {
 
 }
 
-
-
-if (lowest > -1) {
+if (count > 0) {
     mobiles.sort((a, b) => a.sellingPrice - b.sellingPrice)
     mobiles = mobiles.filter(mobile => (mobile.sellingPrice > lowest && mobile.sellingPrice < highest))
     addCards()
-
 } else {
     window.addEventListener('load', addCards())
 }
 
-
-
-
 for (const sortSelection of sortList) {
     sortSelection.addEventListener('change', sortFunction)
 }
-// window.addEventListener('load', addCards)
+
 window.addEventListener('scroll', fixHeader)
 sortBtn.addEventListener('click', () => {
     if (!sortBtn.classList.contains('active')) {
-
         sortMenu.style.display = 'flex'
         sortMenu.style.top = `${document.documentElement.scrollTop}px`
         sortBtn.classList.add('active')
-
         sortMenu.addEventListener('click', () => {
             sortMenu.style.display = 'none'
             sortBtn.classList.remove('active')
@@ -71,7 +62,6 @@ function fixHeader() {
         mainSection.style.marginTop = '0px'
     }
 }
-
 
 function sortFunction() {
     let sortMobiles = document.querySelector("input[name=sort-by]:checked").value
@@ -91,15 +81,12 @@ function sortFunction() {
     addCards()
 }
 
-
 function addCards() {
     for (let i = 0; i < mobiles.length; i++) {
         const card = createCard(i)
-        // console.log(mobiles[i])
         mainSection.appendChild(card)
     }
 }
-
 
 function createCard(i) {
     let amountDetails
@@ -135,9 +122,6 @@ function createCard(i) {
     }
     if (mobiles[i].emi != undefined) {
         emi = mobiles[i].emi
-    }
-    else {
-        emi = ''
     }
     const card = document.createElement('div')
     card.classList.add('card')
@@ -176,7 +160,6 @@ function createCard(i) {
     `
     return card
 }
-
 
 function removeCards() {
     const cardFromDOM = document.querySelectorAll('.card')
