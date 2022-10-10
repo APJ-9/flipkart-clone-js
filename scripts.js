@@ -11,8 +11,9 @@ const sortList = document.querySelectorAll('input[name="sort-by"]')
 const lowest = parseInt(localStorage.getItem('lowest')) * 1000
 const highest = parseInt(localStorage.getItem('highest')) * 1000
 
-console.log(lowest, highest)
-// let lowest = 0
+// console.log(lowest, highest)
+// console.log(mobiles.length);
+// let lowest = -7
 
 mobiles.sort((a, b) => b.rating - a.rating)
 
@@ -24,6 +25,7 @@ for (let i = 0; i < mobiles.length; i++) {
     let sellingPrice = lastPrice - discountPrice
     let pair = { "sellingPrice": sellingPrice }
     mobiles[i] = { ...mobiles[i], ...pair }
+
 }
 
 
@@ -91,8 +93,9 @@ function sortFunction() {
 
 
 function addCards() {
-    for (let i = 0; i < mobiles.length && i < 10; i++) {
+    for (let i = 0; i < mobiles.length; i++) {
         const card = createCard(i)
+        // console.log(mobiles[i])
         mainSection.appendChild(card)
     }
 }
@@ -100,7 +103,7 @@ function addCards() {
 
 function createCard(i) {
     let amountDetails
-    let mobSpec
+    let mobSpec, flipkartAssured = '', emi = ''
     if (mobiles[i].discount == 0) {
         amountDetails = `
         <div class="amount-details">
@@ -115,11 +118,26 @@ function createCard(i) {
             <span class="discount">${mobiles[i].discount}% off</span>
         </div>
         `
-    } if (mobiles[i].specification.length > 0) {
+    }
+    if (mobiles[i].specification.length > 0) {
         mobSpec = ''
         for (let j = 0; j < mobiles[i].specification.length; j++) {
             mobSpec += (`<span>${mobiles[i].specification[j]}</span>`)
         }
+    }
+    if (mobiles[i].flipkartAssured === "true") {
+        flipkartAssured = `
+            <div class="plus">
+                <img src="https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90"
+                    alt="plus-logo-assured">
+            </div>
+        `
+    }
+    if (mobiles[i].emi != undefined) {
+        emi = mobiles[i].emi
+    }
+    else {
+        emi = ''
     }
     const card = document.createElement('div')
     card.classList.add('card')
@@ -140,10 +158,7 @@ function createCard(i) {
                 <div class="rating-plus">
                     <span class="rating">${mobiles[i].rating} ★</span>
                     <span class="num-customer">(${parseInt(mobiles[i].customerCount, 10).toLocaleString('en-IN')})</span>
-                    <div class="plus">
-                        <img src="https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90"
-                            alt="plus-logo-assured">
-                    </div>
+                    ${flipkartAssured}
                 </div>
                 ${amountDetails}
                 <div class="delivery">
@@ -151,6 +166,7 @@ function createCard(i) {
                 </div>
                 <div class="offer-details">
                     <sapn class="offer">${mobiles[i].offer}</sapn>
+                    <sapn class="emi">${emi}</sapn>
                 </div>
             </div>
         </div>

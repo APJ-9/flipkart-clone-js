@@ -294,6 +294,13 @@ header .sort,
     font-family: none;
 }
 
+.offer-details .emi {
+    color: #000;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: .021rem;
+}
+
 .card .more-details {
     display: flex;
     /* flex-direction: column; */
