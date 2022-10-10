@@ -1,17 +1,18 @@
 import allMobiles from './mobile.json' assert {type: 'json'}
 
 
-const mobiles = allMobiles.mobile
+let mobiles = allMobiles.mobile
 const headerBottom = document.getElementById('bottom-section')
 const mainSection = document.getElementById('main')
 const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
 const sortList = document.querySelectorAll('input[name="sort-by"]')
 
-const lowest = parseInt(localStorage.getItem('lowest'))
-const highest = parseInt(localStorage.getItem('highest'))
-console.log(lowest, highest)
+const lowest = parseInt(localStorage.getItem('lowest')) * 1000
+const highest = parseInt(localStorage.getItem('highest')) * 1000
 
+console.log(lowest, highest)
+// let lowest = 0
 
 mobiles.sort((a, b) => b.rating - a.rating)
 
@@ -26,10 +27,23 @@ for (let i = 0; i < mobiles.length; i++) {
 }
 
 
+
+if (lowest > -1) {
+    mobiles.sort((a, b) => a.sellingPrice - b.sellingPrice)
+    mobiles = mobiles.filter(mobile => (mobile.sellingPrice > lowest && mobile.sellingPrice < highest))
+    addCards()
+
+} else {
+    window.addEventListener('load', addCards())
+}
+
+
+
+
 for (const sortSelection of sortList) {
     sortSelection.addEventListener('change', sortFunction)
 }
-window.addEventListener('load', addCards)
+// window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
 sortBtn.addEventListener('click', () => {
     if (!sortBtn.classList.contains('active')) {
