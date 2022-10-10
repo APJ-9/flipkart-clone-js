@@ -19,8 +19,6 @@ for (let i = 0; i < mobiles.length; i++) {
     let sellingPrice = lastPrice - discountPrice
     let pair = { "sellingPrice": sellingPrice }
     mobiles[i] = { ...mobiles[i], ...pair }
-    // console.log(sellingPrice);
-    // console.log(mobiles[i])
 }
 
 for (const sortSelection of sortList) {
@@ -74,8 +72,6 @@ sortBtn.addEventListener('click', () => {
     }
 })
 
-
-// window.onscroll = function () { fixHeader() }
 function fixHeader() {
     if (document.documentElement.scrollTop >= 52) {
         headerBottom.classList.add('active')
