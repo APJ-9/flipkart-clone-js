@@ -8,6 +8,10 @@ const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
 const sortList = document.querySelectorAll('input[name="sort-by"]')
 
+const lowest = parseInt(localStorage.getItem('lowest'))
+const highest = parseInt(localStorage.getItem('highest'))
+console.log(lowest, highest)
+
 
 mobiles.sort((a, b) => b.rating - a.rating)
 
@@ -21,41 +25,10 @@ for (let i = 0; i < mobiles.length; i++) {
     mobiles[i] = { ...mobiles[i], ...pair }
 }
 
+
 for (const sortSelection of sortList) {
     sortSelection.addEventListener('change', sortFunction)
 }
-
-
-function sortFunction() {
-    let sortMobiles = document.querySelector("input[name=sort-by]:checked").value
-    if (sortMobiles === 'popularity') {
-        mobiles.sort((a, b) => b.rating - a.rating)
-    }
-    else if (sortMobiles === 'lowToHigh') {
-        mobiles.sort((a, b) => a.sellingPrice - b.sellingPrice)
-    }
-    else if (sortMobiles === 'highToLow') {
-        mobiles.sort((a, b) => b.sellingPrice - a.sellingPrice)
-    }
-    else {
-        mobiles.sort((a, b) => b.date - a.date)
-    }
-    removeCards()
-    addCards()
-}
-
-
-
-
-// Object.entries(mobiles).forEach(([key, value]) => {
-//     const keys = Object.keys(value)
-//     console.log(keys)
-// });
-
-// console.log(mobiles.sort((a, b) => b.rating - a.rating))
-// console.log(mobiles.sort((a, b) => a.date - b.date))
-
-
 window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
 sortBtn.addEventListener('click', () => {
@@ -84,19 +57,30 @@ function fixHeader() {
 }
 
 
+function sortFunction() {
+    let sortMobiles = document.querySelector("input[name=sort-by]:checked").value
+    if (sortMobiles === 'popularity') {
+        mobiles.sort((a, b) => b.rating - a.rating)
+    }
+    else if (sortMobiles === 'lowToHigh') {
+        mobiles.sort((a, b) => a.sellingPrice - b.sellingPrice)
+    }
+    else if (sortMobiles === 'highToLow') {
+        mobiles.sort((a, b) => b.sellingPrice - a.sellingPrice)
+    }
+    else {
+        mobiles.sort((a, b) => b.date - a.date)
+    }
+    removeCards()
+    addCards()
+}
+
+
 function addCards() {
     for (let i = 0; i < mobiles.length && i < 10; i++) {
         const card = createCard(i)
         mainSection.appendChild(card)
     }
-}
-
-
-function removeCards() {
-    const cardFromDOM = document.querySelectorAll('.card')
-    cardFromDOM.forEach(card => {
-        card.remove()
-    });
 }
 
 
@@ -161,5 +145,13 @@ function createCard(i) {
         </div>    
     `
     return card
+}
+
+
+function removeCards() {
+    const cardFromDOM = document.querySelectorAll('.card')
+    cardFromDOM.forEach(card => {
+        card.remove()
+    });
 }
 

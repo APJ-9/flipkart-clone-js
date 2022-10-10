@@ -4,13 +4,11 @@ checkbox.forEach(element => {
 
     element.addEventListener('click', () => {
         if (element.getAttribute('data-checked') === 'false') {
-            //checked blue color
             element.firstElementChild.setAttribute('src', 'https://static-assets-web.flixcart.com/www/linchpin/batman-returns/cross-platform-images/images/checked-b672f083.png?q=90')
             element.setAttribute('data-checked', 'true')
             count++
             rangeLowest = parseInt(element.getAttribute('data-low'))
             rangeHighest = parseInt(element.getAttribute('data-high'))
-            // console.log('blue');
             if (rangeLowest < lowest) {
                 lowest = rangeLowest
             }
@@ -38,7 +36,9 @@ checkbox.forEach(element => {
             lowest = 0
             highest = 9
         }
+        //Enter the code for filter display
+        localStorage.setItem('lowest', lowest)
+        localStorage.setItem('highest', highest)
     })
 });
-
 
