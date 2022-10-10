@@ -404,3 +404,82 @@ a {
     aspect-ratio: 1;
     margin-right: 19px;
 }
+
+@media screen and (min-width:1024px) {
+
+    header .top-section,
+    header .bottom-section,
+    .main {
+        display: none;
+    }
+
+    .header-desktop-view {
+        background-color: #2874F0;
+        height: 56px;
+        display: flex;
+        align-items: center;
+    }
+
+    .flip-plus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flip {
+        width: 75px;
+    }
+
+    .flip img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .plus {
+        font-size: 11px;
+        font-style: italic;
+        color: white;
+        height: 100%;
+
+    }
+
+    .plus-text {
+        color: #ffe500;
+    }
+
+    .plus img {
+        width: 10px;
+        margin-bottom: 12px;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+
+    .search-box {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        height: 36px;
+        border: none;
+        box-shadow: 0 2px 4px 0rgba(0, 0, 0, .23);
+        max-width: 564px;
+    }
+
+    .search-box input {
+        border: none;
+        width: 100%;
+        padding: 0 0 0 18px;
+    }
+
+    .search-box input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .btn-search {
+        background-color: white;
+        border: none;
+        margin: 0 10px 0 10px;
+    }
+
+}
