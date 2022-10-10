@@ -1,5 +1,5 @@
 const checkbox = document.querySelectorAll('.checkbox')
-let rangeLowest, lowest = 1000
+let rangeLowest, lowest = 1000, highest = 0, rangeHighest, count = 0
 checkbox.forEach(element => {
 
     element.addEventListener('click', () => {
@@ -7,26 +7,37 @@ checkbox.forEach(element => {
             //checked blue color
             element.firstElementChild.setAttribute('src', 'https://static-assets-web.flixcart.com/www/linchpin/batman-returns/cross-platform-images/images/checked-b672f083.png?q=90')
             element.setAttribute('data-checked', 'true')
+            count++
             rangeLowest = parseInt(element.getAttribute('data-low'))
-            // console.log(rangeLowest);
+            rangeHighest = parseInt(element.getAttribute('data-high'))
+            // console.log('blue');
             if (rangeLowest < lowest) {
                 lowest = rangeLowest
+            }
+            if (rangeHighest > highest) {
+                highest = rangeHighest
             }
         } else {
             element.firstElementChild.setAttribute('src', 'https://static-assets-web.flixcart.com/www/linchpin/batman-returns/cross-platform-images/images/unchecked-58d79d4f.png?q=90')
             element.setAttribute('data-checked', 'false')
+            count--
             for (let i = 0; i < checkbox.length; i++) {
                 if (checkbox[i].getAttribute('data-checked') === 'true') {
-                    lowest = checkbox[i].getAttribute('data-low')
+                    lowest = parseInt(checkbox[i].getAttribute('data-low'))
                     break
-                } else {
-                    lowest = 0
                 }
             }
 
+            for (let i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].getAttribute('data-checked') === 'true') {
+                    highest = parseInt(checkbox[i].getAttribute('data-high'))
+                }
+            }
         }
-        console.log(lowest)
-
+        if (count === 0) {
+            lowest = 0
+            highest = 9
+        }
     })
 });
 
