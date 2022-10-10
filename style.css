@@ -405,6 +405,10 @@ a {
     margin-right: 19px;
 }
 
+.header-desktop-view {
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
 
     header .top-section,
