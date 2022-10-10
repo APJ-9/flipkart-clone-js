@@ -1,29 +1,65 @@
 import allMobiles from './mobile.json' assert {type: 'json'}
 
+
 const mobiles = allMobiles.mobile
 const headerBottom = document.getElementById('bottom-section')
 const mainSection = document.getElementById('main')
 const sortBtn = document.getElementById('sort')
 const sortMenu = document.getElementById('sort-menu')
+const sortList = document.querySelectorAll('input[name="sort-by"]')
 
 
-let sortMobiles = ''
+mobiles.sort((a, b) => b.rating - a.rating)
+
+
+for (let i = 0; i < mobiles.length; i++) {
+    let lastPrice = parseInt(mobiles[i].orginalPrice);
+    let discount = parseInt(mobiles[i].discount)
+    let discountPrice = lastPrice * (discount / 100)
+    let sellingPrice = lastPrice - discountPrice
+    let pair = { "sellingPrice": sellingPrice }
+    mobiles[i] = { ...mobiles[i], ...pair }
+    // console.log(sellingPrice);
+    // console.log(mobiles[i])
+}
+
+for (const sortSelection of sortList) {
+    sortSelection.addEventListener('change', sortFunction)
+}
+
+
+function sortFunction() {
+    let sortMobiles = document.querySelector("input[name=sort-by]:checked").value
+    if (sortMobiles === 'popularity') {
+        mobiles.sort((a, b) => b.rating - a.rating)
+    }
+    else if (sortMobiles === 'lowToHigh') {
+        mobiles.sort((a, b) => a.sellingPrice - b.sellingPrice)
+    }
+    else if (sortMobiles === 'highToLow') {
+        mobiles.sort((a, b) => b.sellingPrice - a.sellingPrice)
+    }
+    else {
+        mobiles.sort((a, b) => b.date - a.date)
+    }
+    removeCards()
+    addCards()
+}
+
+
+
 
 // Object.entries(mobiles).forEach(([key, value]) => {
 //     const keys = Object.keys(value)
 //     console.log(keys)
 // });
 
-// console.log(mobiles.sort((a, b) => b.orginalPrice - a.orginalPrice))
-console.log(mobiles.sort((a, b) => b.rating - a.rating))
+// console.log(mobiles.sort((a, b) => b.rating - a.rating))
 // console.log(mobiles.sort((a, b) => a.date - b.date))
 
-const jsonDate = (new Date()).toJSON();
-console.log(jsonDate)
 
 window.addEventListener('load', addCards)
 window.addEventListener('scroll', fixHeader)
-
 sortBtn.addEventListener('click', () => {
     if (!sortBtn.classList.contains('active')) {
 
@@ -35,8 +71,6 @@ sortBtn.addEventListener('click', () => {
             sortMenu.style.display = 'none'
             sortBtn.classList.remove('active')
         })
-        sortMobiles = document.querySelector("input[name=sort-by]:checked").value
-
     }
 })
 
@@ -53,13 +87,22 @@ function fixHeader() {
     }
 }
 
+
 function addCards() {
-    let i = 0
-    for (i = 0; i < mobiles.length && i < 10; i++) {
+    for (let i = 0; i < mobiles.length && i < 10; i++) {
         const card = createCard(i)
         mainSection.appendChild(card)
     }
 }
+
+
+function removeCards() {
+    const cardFromDOM = document.querySelectorAll('.card')
+    cardFromDOM.forEach(card => {
+        card.remove()
+    });
+}
+
 
 function createCard(i) {
     let amountDetails
@@ -74,7 +117,7 @@ function createCard(i) {
         amountDetails = `
         <div class="amount-details">
             <span class="price">${parseInt(mobiles[i].orginalPrice, 10).toLocaleString('en-IN')}</span>
-            <span class="amount">₹${parseInt(mobiles[i].discountPrice, 10).toLocaleString('en-IN')}</span>
+            <span class="amount">₹${parseInt(mobiles[i].sellingPrice, 10).toLocaleString('en-IN')}</span>
             <span class="discount">${mobiles[i].discount}% off</span>
         </div>
         `
