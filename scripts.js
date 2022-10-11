@@ -1,3 +1,4 @@
+//MOBILE SECCTION
 import allMobiles from './mobile.json' assert {type: 'json'}
 
 let mobiles = allMobiles.mobile
