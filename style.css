@@ -416,6 +416,12 @@ a {
         background-color: #F1F3F6;
     }
 
+    a {
+        width: unset;
+        display: unset;
+        cursor: pointer;
+    }
+
     header .top-section,
     header .bottom-section,
     .main {
@@ -565,7 +571,6 @@ a {
     }
 
     .dropdown-list a {
-        width: unset;
         cursor: pointer;
     }
 
@@ -597,13 +602,14 @@ a {
         background-color: #F1F3F6;
     }
 
-    .filter-section-main {
+    .main-section-container {
         display: flex;
+        margin: 0 10px;
 
     }
 
-    .filter-section-left {
-        max-width: 364px;
+    .filter-section {
+        max-width: 350px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -623,10 +629,90 @@ a {
         border-bottom: 1px solid #F1F3F6;
     }
 
-    .todelete {
-        height: 5000px;
+    .main-section {
+        background-color: #fff;
+        /* padding: 14px; */
+        margin-left: 10px;
         width: 100%;
-        background-color: wheat;
     }
+
+    .navigation,
+    .mobile-list,
+    .mobile-showing {
+        display: flex;
+        font-size: 11px;
+        align-items: center;
+        color: #878787;
+        /* background-color: yellow; */
+        /* max-width: 300px; */
+    }
+
+    .navigation a {
+        white-space: nowrap;
+        max-width: 70px;
+        /* background-color: #2874F0; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 0 3px;
+
+    }
+
+    .navigation a:hover {
+        max-width: unset;
+        color: #2874F0;
+        text-overflow: unset;
+    }
+
+    .navigation svg {
+        width: 4px;
+        margin: 0 5px;
+        transform: rotate(180deg);
+    }
+
+    .navigation-arrow {
+        fill: #878787;
+        opacity: .5;
+    }
+
+    .mobile-list a {
+        color: #2874F0;
+        padding: 0 3px;
+    }
+
+    .mobile-showing h3 {
+        color: #000;
+        font-size: 15px;
+    }
+
+    .sort-main {
+        display: flex;
+        /* background-color: yellow; */
+        border-bottom: 1px solid #f1f3f6;
+    }
+
+    .sort-main span {
+        font-weight: bold;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .sort-list-main {
+        display: flex;
+    }
+
+    .sort-list-main span {
+        font-weight: unset;
+        cursor: pointer;
+    }
+
+    .sort-list-main span.active {
+        color: #2874F0;
+        font-weight: bold;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #2874F0;
+        cursor: default;
+    }
+
+
 
 }
