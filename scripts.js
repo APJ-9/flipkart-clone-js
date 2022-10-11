@@ -107,11 +107,16 @@ function createCard(i) {
         </div>
         `
     }
-    if (mobiles[i].specification.length > 0) {
-        mobSpec = ''
-        for (let j = 0; j < mobiles[i].specification.length; j++) {
-            mobSpec += (`<span>${mobiles[i].specification[j]}</span>`)
-        }
+    if (true) {
+        const frontCamera = mobiles[i].specification.frontCamera === undefined ? '' : `<span>${mobiles[i].specification.frontCamera}</span>`
+        mobSpec = `
+                <span>${mobiles[i].specification.ram}</span>
+                <span>${mobiles[i].specification.display}</span>
+                <span>${mobiles[i].specification.battery}</span>
+                <span>${mobiles[i].specification.rearCamera}</span>
+                ${frontCamera}
+            `
+
     }
     if (mobiles[i].flipkartAssured === "true") {
         flipkartAssured = `
