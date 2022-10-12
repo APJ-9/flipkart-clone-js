@@ -9,14 +9,17 @@
             "orginalPrice": "8793",
             "discount": "14",
             "delivery": "free",
+            "warranty": "12 months",
+            "ratingCount": "2972",
+            "reviewCount": "212",
             "offer": "Bank Offer",
             "date": "20001130",
-            "specification": [
-                "3 GB RAM | 32 GB Storage",
-                "16.9 cm (6.53 inch) Display",
-                "5000 mAh",
-                "13MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "3 GB RAM | 32 GB Storage",
+                "display": "16.9 cm (6.53 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "13MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
@@ -27,14 +30,17 @@
             "orginalPrice": "8567",
             "discount": "0",
             "delivery": "free",
+            "warranty": "1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories",
+            "ratingCount": "2972",
+            "reviewCount": "212",
             "offer": "Bank Offer",
             "date": "19990121",
-            "specification": [
-                "4 GB RAM | 64 GB Storage",
-                "16.9 cm (6.53 inch) Display",
-                "5000 mAh",
-                "13MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "4 GB RAM | 64 GB Storage",
+                "display": "16.9 cm (6.53 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "13MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/ku5ufm80/mobile/8/b/1/sport-9a-redmi-original-imag7chjvhxdhhyh.jpeg?q=90&crop=false",
@@ -45,15 +51,18 @@
             "orginalPrice": "6999",
             "discount": "4",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "19981112",
-            "specification": [
-                "2 GB RAM | 32 GB Storage",
-                "16.59 cm (6.53 inch) HD+Display",
-                "5000 mAh",
-                "13MP Rear Camera",
-                "5MP Front Camera"
-            ]
+            "specification": {
+                "ram": "2 GB RAM | 32 GB Storage",
+                "display": "16.59 cm (6.53 inch) HD+Display",
+                "battery": "5000 mAh",
+                "rearCamera": "13MP Rear Camera",
+                "frontCamera": "5MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kehfi4w0/mobile/g/9/h/mi-redmi-9-lpddr4x-original-imafv5kypkgfqupf.jpeg?q=90&crop=false",
@@ -61,18 +70,21 @@
             "rating": "4.2",
             "customerCount": "26284",
             "flipkartAssured": "true",
-            "orginalPrice": "9998",
+            "orgispannalPrice": "9998",
             "discount": "7",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20221121",
-            "specification": [
-                "4 GB RAM | 64 GB Storage",
-                "16.59 cm (6.53 inch) HD+Display",
-                "5000 mAh",
-                "13MP + 2MP",
-                "5MP Front Camera"
-            ]
+            "specification": {
+                "ram": "4 GB RAM | 64 GB Storage",
+                "display": "16.59 cm (6.53 inch) HD+Display",
+                "battery": "5000 mAh",
+                "rearCamera": "13MP + 2MP",
+                "frontCamera": "5MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/y/0/v/-original-imagagf6reaugwfw.jpeg?q=90&crop=false",
@@ -83,15 +95,18 @@
             "orginalPrice": "31999",
             "discount": "21",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Top Discount of the Sale",
             "date": "20051229",
-            "specification": [
-                "6 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
-                "4500 mAh",
-                "108MP + 8MP +2MP",
-                "16MP Front Camera"
-            ]
+            "specification": {
+                "ram": "6 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
+                "battery": "4500 mAh",
+                "rearCamera": "108MP + 8MP +2MP",
+                "frontCamera": "16MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2p23rk0/mobile/b/n/9/12-pro-5g-2201122g-mi-original-imagdz7rs8qfakcb.jpeg?q=90&crop=false",
@@ -102,14 +117,17 @@
             "orginalPrice": "57990",
             "discount": "8",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20221208",
-            "specification": [
-                "12 GB RAM | 256 GB Storage",
-                "17.09 cm (6.73 inch) Full HD+ AMOLED Display",
-                "4600 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "12 GB RAM | 256 GB Storage",
+                "display": "17.09 cm (6.73 inch) Full HD+ AMOLED Display",
+                "battery": "4600 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2p23rk0/mobile/v/w/m/12-pro-5g-2201122g-mi-original-imagdz7fzeqhs54b.jpeg?q=90&crop=false",
@@ -120,14 +138,17 @@
             "orginalPrice": "67999",
             "discount": "0",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20230108",
-            "specification": [
-                "12 GB RAM | 256 GB Storage",
-                "17.09 cm (6.73 inch) Full HD+ AMOLED Display",
-                "4600 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "12 GB RAM | 256 GB Storage",
+                "display": "17.09 cm (6.73 inch) Full HD+ AMOLED Display",
+                "battery": "4600 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kox8b680/mobile/r/z/z/11x-pro-5g-11x-pro-mi-original-imag39qjujuhjerp.jpeg?q=90&crop=false",
@@ -138,15 +159,18 @@
             "orginalPrice": "31995",
             "discount": "0",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20200409",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
-                "4520 mAh",
-                "108MP + 8MP +2MP",
-                "20MP Front Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
+                "battery": "4520 mAh",
+                "rearCamera": "108MP + 8MP +2MP",
+                "frontCamera": "20MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kyoqmq80/mobile/p/u/j/11t-pro-5g-11t-mi-original-imagauzg78sgxy6h.jpeg?q=90&crop=false",
@@ -157,14 +181,17 @@
             "orginalPrice": "49990",
             "discount": "0",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20000222",
-            "specification": [
-                "12 GB RAM | 256 GB Storage",
-                "16.94 cm (6.67 inch) Display",
-                "5000 mAh",
-                "108MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "12 GB RAM | 256 GB Storage",
+                "display": "16.94 cm (6.67 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "108MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/j/u/r/-original-imagagf6zvvbfjjg.jpeg?q=90&crop=false",
@@ -175,15 +202,18 @@
             "orginalPrice": "33999",
             "discount": "14",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto ₹20150 Off on Exchange No Cost EMI from ₹4,500/month",
             "date": "20000222",
-            "specification": [
-                "12 GB RAM | 256 GB Storage",
-                "16.94 cm (6.67 inch) Display",
-                "5000 mAh",
-                "108MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "12 GB RAM | 256 GB Storage",
+                "display": "16.94 cm (6.67 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "108MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kg6vfrk0/mobile/h/m/z/mi-10t-mzb07zain-original-imafwhbyyvhd3g9v.jpeg?q=90&crop=false",
@@ -194,16 +224,19 @@
             "orginalPrice": "39999",
             "discount": "10",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto 16900 Off on Exchange No Cost EMI from ₹6,000/month",
             "date": "20200805",
-            "specification": [
-                "6 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch)Full HD Display",
-                "5000 mAh",
-                "64MP +13MP +5MP",
-                "20MP Front Camera"
-            ]
+            "specification": {
+                "ram": "6 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch)Full HD Display",
+                "battery": "5000 mAh",
+                "rearCamera": "64MP +13MP +5MP",
+                "frontCamera": "20MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kg6vfrk0/mobile/e/s/6/mi-10t-pro-mzb07zdin-original-imafwhbrythgcddt.jpeg?q=90&crop=false",
@@ -214,16 +247,19 @@
             "orginalPrice": "47999",
             "discount": "19",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto 16900 Off on Exchange No Cost EMI from ₹6,475/month",
             "date": "19990402",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch)Full HD Display",
-                "5000 mAh",
-                "108MP +13MP +5MP",
-                "20MP Front Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch)Full HD Display",
+                "battery": "5000 mAh",
+                "rearCamera": "108MP +13MP +5MP",
+                "frontCamera": "20MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kg6vfrk0/mobile/8/y/a/mi-10t-mzb07zcin-original-imafwhccy8hynwp6.jpeg?q=90&crop=false",
@@ -234,16 +270,19 @@
             "orginalPrice": "42999",
             "discount": "11",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto 16900 Off on Exchange No Cost EMI from ₹6,334/month",
             "date": "20100409",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch)Full HD Display",
-                "5000 mAh",
-                "64MP +13MP +5MP",
-                "20MP Front Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch)Full HD Display",
+                "battery": "5000 mAh",
+                "rearCamera": "64MP +13MP +5MP",
+                "frontCamera": "20MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/4/n/d/-original-imagag2gdzpdfsdf.jpeg?q=90&crop=false",
@@ -254,16 +293,19 @@
             "orginalPrice": "31999",
             "discount": "15",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto 16900 Off on Exchange No Cost EMI from ₹6,334/month",
             "date": "20090909",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
-                "5160 mAh",
-                "108MP Rear Camera",
-                "16MP Front Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch) Full HD+ AMOLED Display",
+                "battery": "5160 mAh",
+                "rearCamera": "108MP Rear Camera",
+                "frontCamera": "16MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kzfvzww0/mobile/t/f/s/note-11-2201117ti-redmi-original-imagbgaqje2mygjm.jpeg?q=90&crop=false",
@@ -274,14 +316,17 @@
             "orginalPrice": "12999",
             "discount": "7",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20121212",
-            "specification": [
-                "4 GB RAM | 64 GB Storage",
-                "16.33 cm (6.43 inch) Display",
-                "5000 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "4 GB RAM | 64 GB Storage",
+                "display": "16.33 cm (6.43 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/l3ys70w0/mobile/3/d/n/redmi-10-power-220333qbi-mi-original-imageyuud3bey9hh.jpeg?q=90&crop=false",
@@ -292,14 +337,17 @@
             "orginalPrice": "15990",
             "discount": "12",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20220222",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "17.02 cm (6.7 inch) Display",
-                "6000 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "17.02 cm (6.7 inch) Display",
+                "battery": "6000 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/jkmwdjk0/mobile/c/m/c/mi-redmi-y2-y2-original-imaf7wnynyfjueps.jpeg?q=90&crop=false",
@@ -310,16 +358,19 @@
             "orginalPrice": "13499",
             "discount": "0",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "",
             "emi": "Upto 12850 Off on Exchange No Cost EMI from ₹2,250/month",
             "date": "20120208",
-            "specification": [
-                "4 GB RAM | 64 GB Storage",
-                "15.21 cm (5.99 inch)HD+ Display",
-                "3080 mAh",
-                "12MP +5MP",
-                "16MP Front Camera"
-            ]
+            "specification": {
+                "ram": "4 GB RAM | 64 GB Storage",
+                "display": "15.21 cm (5.99 inch)HD+ Display",
+                "battery": "3080 mAh",
+                "rearCamera": "12MP +5MP",
+                "frontCamera": "16MP Front Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kua4r680/mobile/n/o/b/m2002f4lg-m1910f4g-redmi-note-10-lite-redmi-original-imag7f7fqkuma9rf.jpeg?q=90&crop=false",
@@ -330,14 +381,17 @@
             "orginalPrice": "15490",
             "discount": "3",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20050528",
-            "specification": [
-                "4 GB RAM | 128 GB Storage",
-                "16.94 cm (6.67 inch) Display",
-                "5020 mAh",
-                "48MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "4 GB RAM | 128 GB Storage",
+                "display": "16.94 cm (6.67 inch) Display",
+                "battery": "5020 mAh",
+                "rearCamera": "48MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/l2rwzgw0/mobile/h/5/u/10-power-2201155m-redmi-original-imageftfzx8gfkys.jpeg?q=90&crop=false",
@@ -348,14 +402,17 @@
             "orginalPrice": "14390",
             "discount": "0",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20050828",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "17.02 cm (6.7 inch) Display",
-                "6000 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "17.02 cm (6.7 inch) Display",
+                "battery": "6000 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kwv0djk0/mobile/n/t/m/note-11t-21091116ai-mzb0a8qain-redmi-original-imag9g3hxujubg8g.jpeg?q=90&crop=false",
@@ -366,14 +423,17 @@
             "orginalPrice": "18988",
             "discount": "12",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20211221",
-            "specification": [
-                "8 GB RAM | 128 GB Storage",
-                "16.76 cm (6.6 inch) Display",
-                "5000 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "8 GB RAM | 128 GB Storage",
+                "display": "16.76 cm (6.6 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         },
         {
             "imageURL": "https://rukminim1.flixcart.com/image/200/250/kzhbfrk0/mobile/s/2/3/note-11-2201117ti-redmi-original-imagbh7rzbvfgqex.jpeg?q=90&crop=false",
@@ -384,14 +444,17 @@
             "orginalPrice": "15929",
             "discount": "3",
             "delivery": "free",
+            "warranty": "",
+            "ratingCount": "",
+            "reviewCount": "",
             "offer": "Bank Offer",
             "date": "20230330",
-            "specification": [
-                "6 GB RAM | 128 GB Storage",
-                "16.33 cm (6.43 inch) Display",
-                "5000 mAh",
-                "50MP Rear Camera"
-            ]
+            "specification": {
+                "ram": "6 GB RAM | 128 GB Storage",
+                "display": "16.33 cm (6.43 inch) Display",
+                "battery": "5000 mAh",
+                "rearCamera": "50MP Rear Camera"
+            }
         }
     ]
 }
